@@ -10,3 +10,16 @@
 17	196	7558052388555699	CMakeFiles/chess_C.dir/Bishop.cpp.obj	b4b963ec5cacea85
 8	2138	7595364404337573	CMakeFiles/chess_C.dir/User.cpp.obj	2a7e3d03d3dab48c
 11	640	7595364404367548	CMakeFiles/chess_C.dir/Chess.cpp.obj	f287dabf0e01f7f0
+20	143	7660808582102469	CMakeFiles/chess_C.dir/Piece.cpp.obj	d746ee26c2d5ec31
+29	189	7660808582182614	CMakeFiles/chess_C.dir/Rook.cpp.obj	f2b8777baa3c3577
+36	189	7660808582258902	CMakeFiles/chess_C.dir/Pawn.cpp.obj	c8ffa15753b233cd
+23	290	7660808582127415	CMakeFiles/chess_C.dir/Queen.cpp.obj	b5928755d42c47a1
+32	297	7660808582214271	CMakeFiles/chess_C.dir/Knight.cpp.obj	706a5aa8d417edb3
+26	305	7660808582158428	CMakeFiles/chess_C.dir/Bishop.cpp.obj	1244b74aa444ed09
+17	306	7660808582068926	CMakeFiles/chess_C.dir/King.cpp.obj	10d2e0c4069753ad
+43	776	7660808582317412	CMakeFiles/chess_C.dir/Chess.cpp.obj	1239298f2c359aff
+14	852	7660808582038073	CMakeFiles/chess_C.dir/main.cpp.obj	593b87ee81416952
+39	2215	7660808582283221	CMakeFiles/chess_C.dir/User.cpp.obj	72dbe7c5cda82ce8
+2215	3702	7660808604053867	chess_C.exe	de67f27b455ead38
+21	755	7660808723646402	CMakeFiles/chess_C.dir/main.cpp.obj	593b87ee81416952
+755	2063	7660808730983367	chess_C.exe	de67f27b455ead38

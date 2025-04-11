@@ -5,7 +5,7 @@
 #include "Queen.h"
 #include "King.h"
 #include "Pawn.h"
-#include "Chess.h"
+
 
 Chess::Chess(): limit(0), whiteUser(), blackUser(), whiteTurn(false), selectedPiece(nullptr) {
     for (int i = 0; i < 8; ++i) {
@@ -61,4 +61,11 @@ void Chess::printBoard() {
     }
 }
 
-Chess::~Chess() {}
+Chess::~Chess() {
+    for (int i = 0; i < 8; ++i) {
+        for (int j = 0; j < 8; ++j) {
+            delete board[i][j];
+            board[i][j] = nullptr;
+        }
+    }
+}

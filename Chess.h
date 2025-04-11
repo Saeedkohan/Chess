@@ -14,7 +14,7 @@ using namespace std;
 
 
 class Chess {
-public:
+private:
     int limit;
     User whiteUser;
     User blackUser;
