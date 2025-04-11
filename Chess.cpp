@@ -7,7 +7,7 @@
 #include "Pawn.h"
 
 
-Chess::Chess(): limit(0), whiteUser(), blackUser(), whiteTurn(false), selectedPiece(nullptr) {
+Chess::Chess() : limit(0), whiteUser(), blackUser(), whiteTurn(false), selectedPiece(nullptr) {
     for (int i = 0; i < 8; ++i) {
         for (int j = 0; j < 8; ++j) {
             board[i][j] = nullptr;
@@ -45,19 +45,18 @@ void Chess::initialize() {
     }
 
 
-
 }
 
 void Chess::printBoard() {
     for (int i = 0; i < 8; ++i) {
         for (int j = 0; j < 8; ++j) {
             if (board[i][j] != nullptr) {
-                cout << board[i][j]->name<<board[i][j]->color<<'|';
+                cout << board[i][j]->getName() << board[i][j]->getColor() << '|';
             } else {
-                std::cout << "  |";
+                cout << "  |";
             }
         }
-        std::cout << "\n";
+        cout << "\n";
     }
 }
 

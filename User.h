@@ -11,7 +11,7 @@
 using namespace std;
 
 class User {
-public:
+private:
      std::string userName;
      std::string password;
      int wins;
