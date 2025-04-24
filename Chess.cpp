@@ -51,7 +51,7 @@ void Chess::printBoard() {
     for (int i = 0; i < 8; ++i) {
         for (int j = 0; j < 8; ++j) {
             if (board[i][j] != nullptr) {
-                cout << board[i][j]->getName() << board[i][j]->getColor() << '|';
+                cout << board[i][j] << '|';
             } else {
                 cout << "  |";
             }
