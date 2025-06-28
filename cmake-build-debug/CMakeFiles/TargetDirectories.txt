@@ -1,3 +1,0 @@
-E:/Programming/C+project/Chess_C++/Chess/cmake-build-debug/CMakeFiles/chess_C.dir
-E:/Programming/C+project/Chess_C++/Chess/cmake-build-debug/CMakeFiles/edit_cache.dir
-E:/Programming/C+project/Chess_C++/Chess/cmake-build-debug/CMakeFiles/rebuild_cache.dir

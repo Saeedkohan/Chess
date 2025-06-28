@@ -1,0 +1,29 @@
+# پوشه‌های IDE
+.idea/
+.vs/
+
+# پوشه‌های ساخت CMake
+cmake-build-*/
+cmake-build-debug/
+
+# فایل‌های کش و گزارش CMake
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+compile_commands.json
+
+# فایل‌های اجرایی و کتابخانه‌ها
+*.exe
+*.out
+*.dll
+*.a
+*.so
+*.o
+*.obj
+*.ipch
+*.sdf
+
+# فایل‌های گزارش و موقت
+*.log
+*.tmp
+*.temp
