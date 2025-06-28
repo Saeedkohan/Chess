@@ -1,0 +1,21 @@
+ninja_dyndep_version = 1.0
+build CMakeFiles\chess_C.dir\main.cpp.obj: dyndep
+
+build CMakeFiles\chess_C.dir\King.cpp.obj: dyndep
+
+build CMakeFiles\chess_C.dir\Piece.cpp.obj: dyndep
+
+build CMakeFiles\chess_C.dir\Queen.cpp.obj: dyndep
+
+build CMakeFiles\chess_C.dir\Bishop.cpp.obj: dyndep
+
+build CMakeFiles\chess_C.dir\Rook.cpp.obj: dyndep
+
+build CMakeFiles\chess_C.dir\Knight.cpp.obj: dyndep
+
+build CMakeFiles\chess_C.dir\Pawn.cpp.obj: dyndep
+
+build CMakeFiles\chess_C.dir\User.cpp.obj: dyndep
+
+build CMakeFiles\chess_C.dir\Chess.cpp.obj: dyndep
+

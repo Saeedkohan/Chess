@@ -19,12 +19,14 @@ private:
     int wins;
     int draws;
     int loses;
-    static vector<User> users;
 
 public:
     User(const string &userName, const string &password);
 
     User();
+
+    static vector<User> users;
+
 
     void setUserName(const string& userName) {
         this->userName = userName;
@@ -52,7 +54,7 @@ public:
     static void registerUser(const string &userName, const string &password);
 
     static User login(const string &userName, const string &password);
-
+    static  void removeUser(const string &userName,const string &password);
 
 };
 
