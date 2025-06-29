@@ -20,8 +20,10 @@ private:
     User whiteUser;
     User blackUser;
     bool whiteTurn;
+    bool movedInThisTurn;
     Piece *board[8][8];
     Piece *selectedPiece;
+
 public:
     Chess();
 
@@ -71,6 +73,11 @@ public:
         this->limit = limit;
     }
 
+    void newGame(const string &userName,int limit);
+    void showScoreboard();
+    void selectPiece(int x, int y);
+    void deselectPiece();
+    void movePiece(int x, int y);
 };
 
 

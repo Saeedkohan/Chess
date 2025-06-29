@@ -31,7 +31,7 @@ void User::registerUser(const std::string &userName, const std::string &password
         cout << "Username format is invalid" << endl;
     } else if (!regex_match(password, validRegex)) {
         cout << "Password format is invalid" << endl;
-    } else if (count(users.begin(), users.end(),User(userName,"")) > 0) {
+    } else if (count(users.begin(), users.end(), User(userName, "")) > 0) {
         cout << "a user exists with this username" << endl;
     } else {
         cout << "register successful" << endl;
@@ -65,12 +65,13 @@ User User::login(const string &userName, const string &password) {
     return *it;
 }
 
+
+
 void User::removeUser(const string &userName, const string &password) {
     regex validRegex("[A-Za-z0-9_]+$");
 
     if (!regex_match(userName, validRegex)) {
         cout << "Username format is invalid" << endl;
-
     }
 
     if (!regex_match(password, validRegex)) {
@@ -84,7 +85,7 @@ void User::removeUser(const string &userName, const string &password) {
     if (it->password != password) {
         cout << "Incorrect password" << endl;
     } else {
-
+        users.erase(remove(users.begin(), users.end(), User(userName, password)), users.end());
+        std::cout << "removed "<<userName<<" successfuly"<<endl;
     }
-
 }

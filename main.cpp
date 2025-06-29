@@ -14,7 +14,6 @@
 using namespace std;
 
 int main() {
-
     Chess chess;
     chess.initialize();
     chess.printBoard();
@@ -82,7 +81,31 @@ forfeit)" << endl;
             } else {
                 std::cout << "invalid command" << std::endl;
             }
+        } else if (parts[0] == "remove") {
+            if (parts.size() == 3) {
+                User::removeUser(parts[1], parts[2]);
+            } else {
+                std::cout << "invalid command" << std::endl;
+            }
+        } else if (!chess.getWhiteUser().getUserName().empty() && chess.getBlackUser().getUserName().empty() && parts[0]
+                   == "new_game") {
+            chess.newGame(parts[1], stoi(parts[2]));
+        } else if (parts[0] == "scoreboard") {
+            chess.showScoreboard();
+        } else if (parts[0] == "logout") {
+            chess.setWhiteUser(User());
+            chess.setBlackUser(User());
+            std::cout << "logout successful" << std::endl;
+        } else if (parts[0] == "select") {
+            chess.selectPiece(stoi(parts[1]), stoi(parts[2]));
+        } else if (parts[0] == "deselect") {
+            chess.deselectPiece();
+        }else if (parts[0] == "move") {
+            chess.movePiece(stoi(parts[1]), stoi(parts[2]));
+
+
         }
+
     }
 
 

@@ -7,7 +7,8 @@ class Pawn : public Piece {
 public:
     Pawn(char color, int x, int y);
 
-    bool move(int newX, int newY) override;
+    virtual bool move(int startX, int startY, int destX, int destY, Piece* board[8][8]) = 0;
+
 };
 
 #endif // PAWN_H

@@ -16,6 +16,7 @@ class User {
 private:
     std::string userName;
     std::string password;
+    int score;
     int wins;
     int draws;
     int loses;
@@ -54,7 +55,41 @@ public:
     static void registerUser(const string &userName, const string &password);
 
     static User login(const string &userName, const string &password);
+    // static void logout();
     static  void removeUser(const string &userName,const string &password);
+
+    void setScore(int score) {
+        this->score = score;
+    }
+
+    int getScore() const{
+        return score;
+    }
+
+
+    void setWins(int wins) {
+        this->wins = wins;
+    }
+
+    int getWins() const{
+        return wins;
+    }
+
+    void setLoses(int loses) {
+        this->loses = loses;
+    }
+    int getLoses() const {
+        return loses;
+    }
+
+    void setDraws(int draws) {
+        this->draws = draws;
+    }
+    int getDraws() const {
+        return draws;
+    }
+
+
 
 };
 

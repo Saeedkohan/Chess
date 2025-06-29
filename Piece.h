@@ -55,7 +55,7 @@ public:
     }
 
 
-    virtual bool move(int newX, int newY) = 0;
+    virtual bool move(int startX, int startY, int destX, int destY, Piece* board[8][8]) = 0;
 
     virtual ~Piece() {}
 };
